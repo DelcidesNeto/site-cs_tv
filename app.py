@@ -15,7 +15,7 @@ def cs_tv():
     if valor == 0:
         return redirect('/')
     else:
-        import subprocess
+        `import subprocess
         from playwright.sync_api import sync_playwright
         subprocess.run(["playwright", "install", "chromium"])
         from time import sleep
