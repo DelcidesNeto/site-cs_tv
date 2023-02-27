@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>CS_TV</title>
+</head>
+<body>
+    <h1 class="titulo">Seu teste foi Gerado com SUCESSO!!!</h1>
+    {% if valor == 18 %}
+        <div class="cs_tv">
+            <p>Vencimento: {{ data_vencimento }}</p>
+            <p>Nome de usuário: {{ user }}</p>
+            <p>Usuario / Login: {{ usuario }}</p>
+            <p>Senha / Password: {{ senha }}</p>
+            <p>DADOS DO SERVIDOR:</p>
+            <p>Claro Tv</p>
+            <p>Url / Ip: csgoias.ddns.net</p>
+            <p>Porta: 32005</p>
+            <p>Chave DES: 01 02 03 04 05 06 07 08 09 10 11 12 13 14</p>
+        </div>
+    {% endif %}
+    {% if valor == 19 %}
+        <div class="cs_tv">
+            <p>Vencimento: {{ data_vencimento }}</p>
+            <p>Nome de usuário: {{ user }}</p>
+            <p>Usuario / Login: {{ usuario }}</p>
+            <p>Senha / Password: {{ senha }}</p>
+            <p>DADOS DO SERVIDOR:</p>
+            <p>Sky</p>
+            <p>Url / Ip: csgoias.ddns.net</p>
+            <p>Porta: 31005</p>
+            <p>Chave DES: 01 02 03 04 05 06 07 08 09 10 11 12 13 14</p>
+        </div>
+    {% endif %}
+</body>
+</html>
